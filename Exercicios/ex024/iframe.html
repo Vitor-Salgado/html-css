@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe pagina propria</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+
+        iframe{
+            width: 95vw;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iframe </h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas corporis voluptatum provident, libero ex accusantium sint reiciendis adipisci doloremque incidunt nulla quae ratione molestias exercitationem vel sequi ut fuga. Natus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatum deserunt sint iusto optio sapiente! Iure dolore voluptas eum repellat non dicta! Illo neque sint eum unde voluptatum. Cum, quia!</p>
+
+    <a href="paginas extra/pagina001.html" target="frame">Primeira pagina</a>
+    <a href="paginas extra/pagina002.html" target="frame">Segunda pagina</a>
+    <a href="paginas extra/pagina003.html"target="frame">terceira pagina</a>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam cum asperiores architecto repudiandae illo rem esse possimus necessitatibus accusantium? Consectetur, in fugit. Cumque molestias exercitationem consectetur corrupti sed numquam quidem.</p>
+
+    <iframe name="frame" srcdoc="<h1>Escolhas um dos links para visualizar aqui</h1>">
+        SEu navegador nao e compativel com essa tecnologia
+    </iframe>
+</body>
+</html>
