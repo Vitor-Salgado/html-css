@@ -5,21 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            width: 300px;
+            
+        }
+    </style>
 </head>
 <body>
     <h1>Formulario</h1>
 
     <form action="cadastro.php" method="get" aria-autocomplete="on">
 
-        <p>
-            <label for="iusu">Usuario:</label> <input type="text" name="usu" id="iusu" required placeholder="Nome do usuario"
-            autocomplete="username"
-            maxlength="20" minlength="5" size="15">
-        </p>
-        <p>
-            <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen" placeholder="senha de 8 caracteres" required autocomplete="new-password" maxlength="20" minlength="8">
-        </p>
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label for="iusu">Usuario:</label> <input type="text" name="usu" id="iusu" required placeholder="Nome do usuario"
+                autocomplete="username"
+                maxlength="20" minlength="5" size="15">
+            </p>
+            <p>
+                <label for="isen">Senha:</label>
+                <input type="password" name="sen" id="isen" placeholder="senha de 8 caracteres" required autocomplete="new-password" maxlength="20" minlength="8">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Contatos</legend>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="xxxxxxxx@xxxxxx.com">
+            </p>
+
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{5}-\d{4}$" autocomplete="tel">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <P>
+                <label for="smas">Masculino</label>
+                <input type="radio" name="sexo" id="smas" value="M">
+                <label for="sfem">Feminino</label>
+                <input type="radio" name="sexo" id="sfem" value="F">
+            </P>
+
+        </fieldset>
+        <fieldset>
+            <legend>Esporte favorito</legend>
+            
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label><br>
+            
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label> <br>   
+            
+            <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label><br>
+            
+            <input type="checkbox" name="ten" id="iten"> <label for="iten">Tenis</label><br>
+        </fieldset>
+        
+        
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
