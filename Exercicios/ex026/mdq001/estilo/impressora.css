@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+menu{
+    display:none;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+article::after{
+    content: 'Artigo criado por vitor.Salgado';
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    background-color: black;
+    padding: 20px;
+}
+li{
+    display: inline;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+li:hover{
+    background-color: blue;
+}
+
+h1{
+    
+    margin: auto;
+    padding: 30px;
+    background-color: aqua;
+    text-align: center;
+}
+article{
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+}
+h2{
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
